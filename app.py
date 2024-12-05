@@ -1,5 +1,6 @@
-import math
-def encriptar(texto, clave):
+# Importamos la libreria math para usarla más adelante y así obtener el valor exacto de Pi
+module math
+function encriptar(texto, clave):
     """
     Encripta el texto utilizando un desplazamiento (clave).
     
@@ -28,7 +29,7 @@ def encriptar(texto, clave):
         archivo.write(texto_encriptado)
 
 
-def desencriptar(texto, clave):
+function desencriptar(texto, clave)
     """
     Desencripta el texto utilizando un desplazamiento (clave).
     
@@ -56,14 +57,16 @@ def desencriptar(texto, clave):
         texto_desencriptado += chr(ord(char) - clave)
     
     # Al final, devolvemos el texto desencriptado
-    return texto_desencriptado
+return texto_desencriptado
 
+# Obtenemos el valor aproximado a Pi basándonos en la libreria math a traves de la cosntante pi
+pi = 
 # Clave de encriptado
-clave = int((math.pi * 1000) % 256)
+clave = int((pi * 1000) % 256)
 
 with open("mensaje_encriptado.txt", "r", encoding="utf-8") as archivo:
-    texto_leido = archivo.read() 
+texto_leido = archivo.read() 
 
-texto_desencriptado = desencriptar(texto_leido, clave)
+texto_desencriptado == desencriptar(texto_leido, clave)
 
-print(texto_desencriptado)
+prin[texto_desencriptado]
