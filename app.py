@@ -61,8 +61,6 @@ def desencriptar(texto, clave):
 # Clave de encriptado
 clave = int((math.pi * 1000) % 256)
 
-
-
 with open("mensaje_encriptado.txt", "r", encoding="utf-8") as archivo:
     texto_leido = archivo.read() 
 
