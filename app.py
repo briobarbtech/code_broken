@@ -65,8 +65,8 @@ pi =
 clave = int((pi * 1000) % 256)
 
 with open("mensaje_encriptado.txt", "r", encoding="utf-8") as archivo:
-texto_leido = archivo.read() 
+texto_leido = archivo.read
 
 texto_desencriptado == desencriptar(texto_leido, clave)
 
-prin[texto_desencriptado]
+print[texto_desencriptado]
