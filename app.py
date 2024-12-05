@@ -57,9 +57,10 @@ def desencriptar(texto, clave):
     
     # Al final, devolvemos el texto desencriptado
     return texto_desencriptado
-
+# Obtenemos el valor aproximado a Pi basándonos en la libreria math a traves de la cosntante pi
+pi = math.pi
 # Clave de encriptado
-clave = int((math.pi * 1000) % 256)
+clave = int((pi * 1000) % 256)
 
 with open("mensaje_encriptado.txt", "r", encoding="utf-8") as archivo:
     texto_leido = archivo.read() 
